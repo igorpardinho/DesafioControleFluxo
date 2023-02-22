@@ -11,7 +11,7 @@ public class Controle {
         try {
             contar(primeiroNumero,segundoNumero);
         } catch (ParametrosInvalidosException e) {
-            System.out.println("O segundo parâmetro deve ser maior que o primeiro");
+            throw new RuntimeException("O segundo parâmetro deve ser maior que o primeiro");
         }
 
 
